@@ -1,0 +1,166 @@
+
+{% extends 'base.html' %}
+{% block title %}HOME 
+{% endblock title %}
+{% block body %} 
+<style>
+  .carousel-item{
+    height:32rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+ 
+  .col{
+    height:400px;
+  }
+  .card{
+    width:350px;
+  }
+  .card img{
+   height:300px;
+   width:348px;
+  }
+  .card-body{
+    width:200px;
+    padding:0px;
+  }
+  .container-fluid{
+    margin:0px;
+  }
+</style>
+<div class="container-fluid px-0 mb-5"   >
+  <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner " >
+      <div class="carousel-item active">
+        <img src="\static\img\coro.jpg
+        " class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="\static\img\coro2.jpg
+        " class="d-block w-100  " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="\static\img\ngo3.jpg
+        " class="d-block w-100 " alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<H1 class="text-center mb-5 text-white"> OUR PROGRAMS </H1>
+<div class="row">
+      <div class="col-lg-4 text-center">
+        <img class="bd-placeholder-img rounded-circle mb-3" style=" width: 150px;height:150px" src="static\img\book.png">
+        <h2 class="text-white">Education</h2>        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img class="bd-placeholder-img rounded-circle mb-3" style=" width: 150px;height:150px" src="static\img\blood.png">
+        <h2 class="text-white">Blood Donation</h2>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4 text-center ">
+        <img class="bd-placeholder-img rounded-circle mb-3" style=" width: 150px;height:150px" src="static\img\charity.jpg">
+        <h2 class="text-white">Charity</h2>
+      </div><!-- /.col-lg-4 -->
+</div>
+<div class="p-4 my-3 p-md-5 mb-3  text-white ">
+    
+      <h1 class=" fst-italic text-center">“ A warm smile is the universal language of kindness ”</h1>
+</div>
+<H1 class="text-center text-white my-5">GALLERY</H1>
+<div class="album py-2 ">
+  <div class="container ">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card ">
+         <img src="\static\img\ngo1.jpg">
+
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+         
+<img src="\static\img\ngo2.jpg" >
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+         <img src="\static\img\ngo4.jpg">
+          <div class="card-body">
+           
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          
+<img src="\static\img\ngo5.jpg">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+         <img src="\static\img\ngo9.jfif">
+
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="\static\img\ngo8.jpg">
+
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="\static\img\ngo12.jfif">
+
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="\static\img\ngo13.jfif">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="\static\img\ngo14.jpg">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%include 'footer.html'%}
+{% endblock body %}
